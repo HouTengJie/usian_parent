@@ -29,4 +29,8 @@ public class ItemParamController {
     public Integer insertItemParam(Long itemCatId,String paramData){
         return itemParamService.insertItemParam(itemCatId,paramData);
     }
+    @RequestMapping("/deleteItemParamById")
+    public Integer deleteItemParamById(Long id){
+        return itemParamService.deleteItemParamById(id);
+    }
 }
